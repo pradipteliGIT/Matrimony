@@ -1,0 +1,10 @@
+@import "./variables";
+@import "./mixins";
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; color: $color-primary !important;}
+
+.test{
+   @include font-bold-primary($color-primary);
+   background-color: green;
+}
